@@ -1,0 +1,231 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400;700&family=Rubik:wght@400;700&display=swap');
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+:root {
+    /* La Coleurs */
+    --primary-color: #2d71b5;
+    --secondary-color: #10375e;
+    --tertiary-color: #f2f2f2;
+    --quaternary-color: #333;
+
+    /* Font Configs */
+    --font-family: 'Montserrat', sans-serif;
+    --font-family-alt: 'Rubik', sans-serif;
+
+    --fsize-small: 0.8rem;
+    --fsize-standard: 1rem;
+    --fsize-medium: 1.2rem;
+    --fsize-large: 1.5rem;
+    --fsize-xlarge: 2rem;
+    --fsize-xxlarge: 3rem;
+}
+
+body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+
+    font-family: var(--font-family);
+    background-color: var(--tertiary-color);
+    color: var(--quaternary-color);
+    font-size: var(--fsize-standard);
+}
+
+header {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    width: 100%;
+    height: 60px;
+    background-color: var(--primary-color);
+    color: var(--tertiary-color);
+    font-size: var(--fsize-medium);
+    font-family: var(--font-family-alt);
+    font-weight: bold;
+    padding: 0 20px;
+    margin-bottom: 50px;
+
+    ul {
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: space-between;
+        gap: 20px;
+    }
+
+    a {
+        font-size: inherit;
+        font-family: inherit;
+        color: inherit;
+        padding: 10px 20px;
+        border-radius: 5px;
+        border-radius: 0;
+        text-decoration: none;
+
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+            background-color: var(--secondary-color);
+            cursor: pointer;
+        }
+    }
+}
+
+footer {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    position: relative;
+    width: 100%;
+    height: 200px;
+    margin-top: auto;
+    background-color: var(--primary-color);
+    color: var(--tertiary-color);
+    font-size: var(--fsize-medium);
+    font-family: var(--font-family-alt);
+    padding: 20px;
+}
+
+ul, li {
+    list-style-type: none;
+}
+
+.title {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+#pfp_main {
+    display: block;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    margin-right: 20px;
+    outline: 2px solid var(--quaternary-color);
+}
+
+.flags_container {
+    display: flex;
+    flex-direction: row;
+    margin-top: 10px;
+}
+
+.flag {
+    display: block;
+    width: 30px;
+}
+
+hr {
+    border: none;
+    border-top: 2px solid var(--quaternary-color);
+    margin: 50px 0;
+    width: 40%;
+}
+
+h1 {
+    font-size: var(--fsize-xxlarge);
+}
+
+.card {
+    width: 40%;
+    border-radius: 10px;
+    outline: 2px solid var(--quaternary-color);
+    background-color: #33333310;
+    overflow: hidden;
+
+    .card-top {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+        height: 200px;
+        padding: 10px 60px;
+        overflow: inherit;
+    }
+
+    .hero {
+        display: block;
+        width: 320px;
+
+        transform: translateY(15px);
+    }
+
+    hr {
+        width: 100%;
+        margin: 0;
+    }
+
+    .card-middle {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+
+        .item {
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            width: 100%;
+        }
+
+        .icon {
+            display: block;
+            width: 70px;
+            height: 70px;
+            margin-right: 20px;
+            padding: 10px;
+            outline: 1px solid var(--quaternary-color);
+            background-color: #33333320;
+            border-radius: 10px;
+        }
+    }
+
+    .card-bottom {
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        padding: 20px;
+        gap: 10px;
+        
+        img {
+            display: block;
+            outline: 1px solid var(--quaternary-color);
+        }
+    }
+}
+
+.text {
+    width: 40%;
+    margin: 50px 0;
+}
+
+h2 {
+    font-size: var(--fsize-xlarge);
+}
+
+h3 {
+    font-size: var(--fsize-large);
+}
+
+h4 {
+    font-size: var(--fsize-medium);
+}
+
+/* For later :) */
+@media (width: 800px) {
+}
