@@ -10,36 +10,54 @@
     <script src="/src/scripts/pfps.js" defer></script>
 </head>
 <body>
-
     {% include header.html %}
+    <section class="inner_body">
 
-    {% include hero.html %}
+    <section id="title_container">
 
-    <h2>About</h2>
+        <div class="title_content">
+            <div class="title">
+                <img src="" alt="Profile Picture" id="pfp_main">
+                <div style="flex-direction: column;">
+                    <h1>Frites</h1>
+                    <p><i>@dannys.frites</i></p>
+                    <div class="flags_container">
+                        <img src="/res/images/ro_flag.gif" alt="Romanian Flag" class="flag">
+                        <img src="/res/images/gb_flag.gif" alt="British Flag" class="flag">
+                    </div>
+                </div>
+            </div>
 
-    <section class="text">
-        Hi! I'm Frites, and welcome to my website!<br>
-        I'm 17, Romanian, and I go by any pronouns, though preferrably you'd use he/him
-        I'm a Virgo, and I am an ENFP.
+            {% include hero.html %}
+        </div>
     </section>
 
-    <h3>My Interests</h3>
+    <section id="info_container">
+        <h2>Get to know me</h2>
 
-    <section class="text">
-        My amazing boyfriend is my greatest interest, but my current passion is programming.
-        <br><br>
-        My favourite programming languages are Python, GDScript, GMLCode, HTML, and Lua.
-        <br><br>
-        My favourite shows are Neon Genesis Evangelion, Death Note, Las Fierbinti, Jujutsu Kaisen, Re:Zero, and JoJo's Bizarre Adventure
-        <br><br>
-        My favourite games are DELTARUNE, UNDERTALE, Rubinite, Jujutsu Shenanigans (ROBLOX), Counter-Strike Source 2, Hollow Knight ( + SilkSong), and OMORI
-        <br><br>
-        My favourite characters are Asuka Langley Soryu / Shikinami (NGE), Mira (Rubinite), Noelle Holiday (DELTARUNE), and Johnny Joestar (JJBA)
-        <br><br>
-        I use <strike><i>Arch</i></strike> Artix btw
+        <p>
+            Hi! I'm Frites, and welcome to my website!
+            I'm 17, Romanian, and I go by any pronouns, though preferrably you'd use he/him.
+            I'm a Virgo, and I am an ENFP.
+        </p>
+
+        <h3>My Interests</h3>
+
+        <p>
+            My amazing boyfriend is my greatest interest, but my current passion is programming.
+            <br><br>
+            My favourite programming languages are Python, GDScript, GMLCode, HTML, and Lua.
+            <br><br>
+            My favourite shows are Neon Genesis Evangelion, Death Note, Las Fierbinti, Jujutsu Kaisen, Re:Zero, and JoJo's Bizarre Adventure.
+            <br><br>
+            My favourite games are Hollow Knight ( + Silksong), DELTARUNE, UNDERTALE, and Rubinite.
+            <br><br>
+            My favourite characters are Lace (Hollow Knight: Silksong),Asuka Langley Soryu / Shikinami (NGE), Mira (Rubinite), Noelle Holiday (DELTARUNE), and Johnny Joestar (JJBA).
+            <br><br>
+            I use <strike><i>Arch</i></strike> Artix btw
+        </p>
     </section>
-
-    {% include footer.html %}
     
+    </section>
 </body>
 </html>
