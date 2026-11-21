@@ -34,9 +34,4 @@ async function loadDiscordPfp(discordId, elementId) {
   }
 }
 
-loadDiscordPfp("734445627915894824", "pfp_main");
-loadDiscordPfp("940053122884190229", "discord-pfp-bf");
-loadDiscordPfp("700347721877553262", "discord-pfp-ihax");
-loadDiscordPfp("1219748297544175770", "discord-pfp-kaua");
-loadDiscordPfp("776815003231059969", "discord-pfp-aeter");
-loadDiscordPfp("1030099616168939591", "discord-pfp-kiiro");
+loadDiscordPfp("734445627915894824", "pfp-main");
