@@ -55,7 +55,6 @@ body {
     align-items: center;
     justify-content: center;
     font-size: var(--font-size-xlarge);
-    font-weight: bold;
     margin-bottom: 1rem;
 
     #pfp-main {
@@ -112,11 +111,11 @@ body {
 #contact{
     display: flex;
     flex-direction: column;
-    align-items: center;
-    justify-content: center;
+    margin: 2rem auto;
+}
 
-    width: 80vw;
-    margin: 2rem 0;
+#top {
+    width: 60%;
 }
 
 #contact {
@@ -150,6 +149,16 @@ body {
     }
 }
 
+h1,
+h2,
+h3 {
+    text-align: center;
+}
+
+h1 {
+    font-weight: bold;
+}
+
 h2 {
     font-size: var(--font-size-xxlarge);
     margin: 1rem 0;
@@ -164,6 +173,12 @@ hr {
     width: 60%;
     border: 1px solid var(--tertiary-color);
     margin: 5rem auto;
+}
+
+p {
+    font-size: var(--font-size-standard);
+    line-height: 1.5;
+    margin: 1rem 0;
 }
 
 ul {
@@ -215,7 +230,7 @@ li a{
     #projects,
     #hire,
     #contact {
-        width: 100%;
+        width: 90%;
     }
 
     #contact .contact-methods {
