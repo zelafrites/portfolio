@@ -128,9 +128,11 @@ body {
 
     img {
         display: block;
-        width: 200px;
-        height: 100px;
+        width: 500px;
+        aspect-ratio: 16/9;
         border-radius: 10px;
+
+        border: 2px solid var(--secondary-color);
     }
 
     .project-container {
@@ -138,7 +140,84 @@ body {
         flex-direction: row;
         justify-content: center;
         align-items: center;
-        gap: 20%;
+        gap: 600px;
+        padding: 100px 0;
+        border-radius: 10px;
+    }
+
+    .project-info {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        gap: 1rem;
+        width: 400px;
+    }
+
+    button {
+        text-decoration: none;
+        color: var(--text-color);
+        font-weight: bold;
+        transition: all 0.3s ease;
+        font-size: var(--font-size-standard);
+        font-family: var(--font-family);
+        border: none;
+        cursor: pointer;
+        
+        padding: 10px;
+        border-radius: 5px;
+        
+    }
+
+    a {
+        color: inherit;
+
+        &:visited {
+            color: inherit;
+        }
+    }
+
+    .valence {
+        background: #061B6C;
+        background: linear-gradient(270deg, #061b6c 0%, #304186 50%, #6874a7 100%);
+
+        button {
+            background: #304186;
+
+            &:hover {
+                background-color: var(--tertiary-color);
+            }
+        }
+    }
+
+    .ytd {
+        background: #FF0033;
+        background: linear-gradient(270deg, #ff0033 40%, white 60%);
+
+        button {
+            color: var(--secondary-color);
+            background: white;
+
+            &:hover {
+                background-color: #ff4b6f;
+            }
+        }
+    }
+
+    .odyssial {
+        background: #dec3c3;
+        background: linear-gradient(50deg, #dec3c3 11%, #8ca2d1 50%, #ceadd9 88%);
+
+        color: var(--secondary-color);
+
+        button {
+            background: #8ca2d1;
+
+            &:hover {
+                background-color: #dec3c3;
+                color: var(--secondary-color);
+            }
+        }
     }
 }
 
@@ -171,6 +250,10 @@ body {
             color: var(--tertiary-color);
         }
     }
+
+    p {
+        margin: 0;
+    }
 }
 
 h1,
@@ -196,7 +279,7 @@ h3 {
 hr {
     width: 60%;
     border: 1px solid var(--tertiary-color);
-    margin: 5rem auto;
+    margin: auto;
 }
 
 p {
@@ -225,6 +308,11 @@ li button{
     &:hover {
         background-color: var(--tertiary-color);
     }
+}
+
+img {
+    display: block;
+    object-fit: cover;
 }
 
 @media (max-width: 768px) {
