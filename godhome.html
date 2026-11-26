@@ -12,11 +12,68 @@
 </head>
 <body class="godhome">
 
-    <audio autoplay loop hidden>
-        <source src="/res/audio/godhome.mp3" type="audio/mpeg"/>
-        Your browser does not support HTML audio.
-    </audio>
+    <div class="godhome-stage">
+        <audio autoplay loop hidden>
+            <source src="/res/audio/godhome.mp3" type="audio/mpeg"/>
+            Your browser does not support HTML audio.
+        </audio>
 
-    {% include void.html %}
+        <h1 class="g-h1">Godhome</h1>
+
+        <h2 class="g-h2">Descend into the void to uncover Godhome's attunements.</h2>
+
+        {% include void.html %}
+
+        <section class="pedestal-cont">
+            <img src="/res/images/pedestals/knight.png" class="hero">
+            <img src="/res/images/pedestals/pedestal.png" class="pedestal">
+            <p>Frites</p>
+            <div class="completions">
+                <span>Pantheon 5</span> •
+                <span>RADIANT Absolute Radiance</span> •
+                <span>ASCENDED Markoth</span>
+            </div>
+        </section>
+
+        <section class="pedestals-mini">
+            <div class="spoingo">
+                <img src="/res/images/pedestals/teapot.png" class="hero">
+                <img src="/res/images/pedestals/pedestal.png" class="pedestal">
+                <p>Spoingo</p>
+                <div class="completions">
+                    <span>Pantheon 4</span> •
+                    <span>Nightmare King Grimm</span>
+                </div>
+            </div>
+
+            <div class="kaua">
+                <img src="/res/images/pedestals/gemini.png" class="hero">
+                <img src="/res/images/pedestals/pedestal.png" class="pedestal">
+                <p>Kaua</p>
+                <div class="completions">
+                    <span>Vessel attuning the Gods of Hallownest</span>
+                </div>
+            </div>
+        </section>
+
+        <section class="videos">
+            <h3 class="g-h3">Godhome Achievements</h3>
+            <div class="video">
+                <h4 class="g-h4">Radiant Absolute Radiance</h4>
+                <iframe src="https://www.youtube.com/embed/uxLwEiNj7GM"></iframe>
+            </div>
+            <div class="video">
+                <h4 class="g-h4">Pantheon 5</h4>
+                <p>No video I'm sorry :(. Maybe soon</p>
+            </div>
+            <div class="video">
+                <h4 class="g-h4">Ascended Markoth</h4>
+                <iframe src="https://www.youtube.com/embed/00000000000"></iframe>
+            </div>
+        </section>
+
+    </div>
+
+    {% include godhome-footer.html %}
 
 </body>
