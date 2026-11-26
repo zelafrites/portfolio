@@ -20,13 +20,24 @@
     --font-size-large: 1.2rem;
     --font-size-xlarge: 1.5rem;
     --font-size-xxlarge: 2rem;
+
+    /* Special stuff */
+    --void_height: 20vh;
 }
 
 header {
     display: flex;
+    justify-content: space-between;
+    align-items: center;
     background-color: var(--primary-color);
     width: 100%;
     height: 60px;
+}
+
+.godtuner {
+    display: block;
+    width: 40px;
+    margin: 0 20px;
 }
 
 footer {
@@ -49,6 +60,13 @@ body {
     font-size: var(--font-size-standard);
     background-color: var(--secondary-color);
     color: var(--text-color);
+}
+
+body.godhome {
+    background-image: url('/res/images/Godhome_BG1.jpg');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
 }
 
 .title {
@@ -360,5 +378,42 @@ img {
 
     li a {
         font-size: var(--font-size-large);
+    }
+
+    /* Godhome stuff */
+    .void {
+        .tendril_right {
+            margin-bottom: calc(var(--void_height) - 3vh);
+        }
+    }
+}
+
+/* Godhome stuff */
+
+.void {
+
+    position: fixed;
+
+    background-color: #000000fe;
+    width: 100%;
+    height: var(--void_height);
+    bottom: 0;
+
+    .tendril_left {
+        position: fixed;
+        margin-bottom: calc(var(--void_height) - 3vh);
+        bottom: 0;
+        left: 0;
+        width: 50vw;
+        height: auto;
+    }
+
+    .tendril_right {
+        position: fixed;
+        margin-bottom: calc(var(--void_height) - 6vh);
+        bottom: 0;
+        right: 0;
+        width: 50vw;
+        height: auto;
     }
 }
